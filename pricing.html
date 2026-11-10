@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing | Supremo Fitness</title>
+    <link rel="icon" type="image/png" href="img/logo1.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -43,18 +44,18 @@
           <!-- Na-update: May drop shadow na ang buong link -->
           <a
             href="index.html"
-            class="flex items-center gap-3 text-white hover:text-gray-300 transition-colors z-50 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+            class="flex items-center gap-2 text-white hover:text-gray-300 transition-colors z-50 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
           >
             <!-- Na-update: Mas malaking logo image (w-10 md:w-12) -->
             <img
-              src="img/logo.png"
+              src="img/logo1.png"
               alt="Logo"
-              class="w-10 md:w-12 h-auto object-contain"
+              class="w-12 h-12 md:w-14 md:h-14 object-contain scale-110"
             />
-            <!-- Na-update: May text-shadow na para kitang-kita sa white background -->
-            <span
-              class="font-kenyan text-2xl md:text-3xl tracking-widest uppercase whitespace-nowrap mt-1[text-shadow:_0_2px_8px_rgb(0_0_0_/_1)]"
-              >SUPREMO FITNESS</span
+            <img
+              src="img/text.png"
+              alt="Supremo Fitness"
+              class="h-10 md:h-12 w-auto object-contain"
             >
           </a>
         </div>
@@ -63,18 +64,18 @@
           class="hidden lg:flex flex-1 justify-end items-center h-full space-x-12 pr-6 md:pr-16 xl:pr-24">
           <a
             href="index.html#classes"
-            class="font-sans text-[15px] font-bold tracking-[0.1em] uppercase text-white hover:text-gray-300 transition-colors"
-            >Classes</a
+            class="navbar-pulse-link font-sans text-[15px] font-bold tracking-[0.1em] uppercase text-white transition-colors duration-200"
+            ><span>Classes</span></a
           >
           <a
             href="pricing.html"
-            class="font-sans text-[15px] font-bold tracking-[0.1em] uppercase text-white hover:text-gray-300 transition-colors"
-            >Pricing</a
+            class="navbar-pulse-link font-sans text-[15px] font-bold tracking-[0.1em] uppercase text-white transition-colors duration-200"
+            ><span>Pricing</span></a
           >
           <a
             href="about.html"
-            class="font-sans text-[15px] font-bold tracking-[0.1em] uppercase text-white hover:text-gray-300 transition-colors"
-            >About Us</a
+            class="navbar-pulse-link font-sans text-[15px] font-bold tracking-[0.1em] uppercase text-white transition-colors duration-200"
+            ><span>About Us</span></a
           >
         </nav>
 
@@ -103,18 +104,18 @@
       >
         <a
           href="index.html#classes"
-          class="font-sans text-sm font-bold tracking-[0.1em] uppercase text-white hover:text-gray-300 block w-full text-center transition-colors"
-          >Classes</a
+          class="navbar-pulse-link block w-full text-center font-sans text-sm font-bold tracking-[0.1em] uppercase text-white transition-colors duration-200"
+          ><span>Classes</span></a
         >
         <a
-          href="prica.html"
-          class="font-sans text-sm font-bold tracking-[0.1em] uppercase text-white hover:text-gray-300 block w-full text-center transition-colors"
-          >Pricing</a
+          href="pricing.html"
+          class="navbar-pulse-link block w-full text-center font-sans text-sm font-bold tracking-[0.1em] uppercase text-white transition-colors duration-200"
+          ><span>Pricing</span></a
         >
         <a
           href="about.html"
-          class="font-sans text-sm font-bold tracking-[0.1em] uppercase text-white hover:text-gray-300 block w-full text-center transition-colors"
-          >About Us</a
+          class="navbar-pulse-link block w-full text-center font-sans text-sm font-bold tracking-[0.1em] uppercase text-white transition-colors duration-200"
+          ><span>About Us</span></a
         >
       </div>
     </header>
@@ -152,7 +153,7 @@
               ><span class="block hero-line text-white">TRAIN ON</span></span
             >
             <span class="block overflow-hidden"
-              ><span class="block hero-line text-white"
+              ><span class="block hero-line text-[#ff4da6]"
                 >YOUR TERMS.</span
               ></span
             >
@@ -179,7 +180,7 @@
           <h2
             class="font-kenyan text-6xl md:text-8xl lg:text-[9rem] uppercase tracking-wider leading-[0.85] text-white mb-6"
           >
-            CHOOSE YOUR<br /><span class="text-gray-400">TRAINING STYLE.</span>
+            CHOOSE YOUR<br /><span class="text-[#ff4da6]">TRAINING STYLE.</span>
           </h2>
           <p
             class="text-gray-400 text-sm md:text-base max-w-2xl leading-relaxed"
@@ -242,17 +243,21 @@
             </div>
           </div>
 
-          <!-- Monthly — HIGHLIGHTED CENTER PANEL (Scale + Contrast) -->
+          <!-- Monthly — featured membership plan -->
           <div
-            class="relative bg-[#111111] border border-white/40 p-8 md:p-10 xl:p-14 flex flex-col transform lg:scale-[1.05] shadow-[0_0_40px_rgba(255,255,255,0.05)] z-20 h-auto"
+            class="relative bg-gradient-to-b from-[#24101c] to-[#111111] border-2 border-[#ec168c] p-8 md:p-10 xl:p-12 flex flex-col transform lg:scale-[1.05] shadow-[0_0_45px_rgba(236,22,140,0.28)] z-20 h-auto"
           >
-            <!-- Inverted Tag -->
-            <span
-              class="self-start text-[10px] font-bold tracking-[0.2em] uppercase bg-white text-black px-3 py-1 mb-6"
-              >MONTHLY</span
-            >
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <span
+                class="text-[10px] font-bold tracking-[0.2em] uppercase bg-[#ec168c] text-white px-3 py-1.5"
+                >MONTHLY PLAN</span
+              >
+              <span class="text-[10px] font-bold tracking-[0.16em] uppercase text-[#ff4da6] border border-[#ec168c]/50 px-3 py-1.5"
+                >MOST POPULAR</span
+              >
+            </div>
             <h3
-              class="font-kenyan text-5xl md:text-6xl uppercase tracking-wider leading-none mb-2 text-white"
+              class="font-kenyan text-5xl md:text-6xl uppercase tracking-wider leading-none mb-2 text-[#ff4da6]"
             >
               GYM ACCESS
             </h3>
@@ -260,38 +265,38 @@
 
             <ul class="space-y-3 flex-grow mb-10">
               <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
+                <span class="w-1.5 h-1.5 bg-[#ff4da6] flex-shrink-0"></span>
                 <span class="text-gray-100 text-sm">Unlimited gym access, all month</span>
               </li>
               <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
+                <span class="w-1.5 h-1.5 bg-[#ff4da6] flex-shrink-0"></span>
                 <span class="text-gray-100 text-sm">Built for long-term progress</span>
               </li>
               <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
+                <span class="w-1.5 h-1.5 bg-[#ff4da6] flex-shrink-0"></span>
                 <span class="text-gray-100 text-sm">Flexible schedule — train anytime</span>
               </li>
               <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
+                <span class="w-1.5 h-1.5 bg-[#ff4da6] flex-shrink-0"></span>
                 <span class="text-gray-100 text-sm">Full equipment access</span>
               </li>
               <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
-                <span class="text-gray-100 text-sm">Expert coaching included</span>
+                <span class="w-1.5 h-1.5 bg-[#ff4da6] flex-shrink-0"></span>
+                <span class="text-gray-100 text-sm">Non-refundable membership</span>
               </li>
               <li class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
+                <span class="w-1.5 h-1.5 bg-[#ff4da6] flex-shrink-0"></span>
                 <span class="text-gray-100 text-sm">Cancel anytime (no lock-in)</span>
               </li>
             </ul>
 
-            <div class="border-t border-white/20 pt-6">
+            <div class="border-t-2 border-[#ec168c]/60 pt-6">
               <p
-                class="text-[10px] text-gray-400 uppercase tracking-[0.2em] mb-1"
+                class="text-[10px] text-[#ff8fc4] uppercase tracking-[0.2em] mb-1"
               >
-                Starting at
+                Monthly membership
               </p>
-              <p class="font-sans font-bold text-5xl text-white">
+              <p class="font-sans font-bold text-5xl text-[#ff4da6]">
                 ₱1,000
                 <span class="text-lg text-gray-400 font-normal">/ month</span>
               </p>
@@ -367,85 +372,85 @@
           <h2
             class="font-kenyan text-6xl md:text-8xl uppercase tracking-wider leading-[0.85] text-white"
           >
-            WHAT SETS<br /><span class="text-gray-400">US APART.</span>
+            WHAT SETS<br />US APART.
           </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           <!-- Feature 1 -->
-          <div class="border border-white/10 p-8 hover:border-white/30 transition-all hover:bg-white/5 duration-300">
-            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <div class="bg-[#151315] border border-white/10 border-t-2 border-t-[#ec168c]/55 p-8 hover:border-[#ec168c]/40 transition-all hover:bg-[#191519] duration-300">
+            <div class="w-12 h-12 bg-[#ec168c]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3">Expert Coaching</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3 text-white">Expert Coaching</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
               Certified coaches on-site to guide your training journey, fix your form, and push you toward your goals safely and effectively.
             </p>
           </div>
 
           <!-- Feature 2 -->
-          <div class="border border-white/10 p-8 hover:border-white/30 transition-all hover:bg-white/5 duration-300">
-            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <div class="bg-[#151315] border border-white/10 border-t-2 border-t-[#ec168c]/45 p-8 hover:border-[#ec168c]/35 transition-all hover:bg-[#191519] duration-300">
+            <div class="w-12 h-12 bg-[#ec168c]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
               </svg>
             </div>
-            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3">State-of-the-Art Equipment</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3 text-white">State-of-the-Art Equipment</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
               Premium strength machines, free weights, cardio equipment, and specialized gear for boxing, MMA, and functional training.
             </p>
           </div>
 
           <!-- Feature 3 -->
-          <div class="border border-white/10 p-8 hover:border-white/30 transition-all hover:bg-white/5 duration-300">
-            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <div class="bg-[#151315] border border-white/10 border-t-2 border-t-[#ec168c]/55 p-8 hover:border-[#ec168c]/40 transition-all hover:bg-[#191519] duration-300">
+            <div class="w-12 h-12 bg-[#ec168c]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3">No Long-Term Contracts</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3 text-white">No Long-Term Contracts</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
               Pay monthly or annually with complete flexibility. Cancel anytime. Your training, your rules. No hidden fees.
             </p>
           </div>
 
           <!-- Feature 4 -->
-          <div class="border border-white/10 p-8 hover:border-white/30 transition-all hover:bg-white/5 duration-300">
-            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <div class="bg-[#151315] border border-white/10 border-t-2 border-t-[#ec168c]/45 p-8 hover:border-[#ec168c]/35 transition-all hover:bg-[#191519] duration-300">
+            <div class="w-12 h-12 bg-[#ec168c]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3">Always Open</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3 text-white">Always Open</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
               Train 7 days a week, early mornings to late evenings. No restrictions. Your schedule, your pace. Just show up and grind.
             </p>
           </div>
 
           <!-- Feature 5 -->
-          <div class="border border-white/10 p-8 hover:border-white/30 transition-all hover:bg-white/5 duration-300">
-            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <div class="bg-[#151315] border border-white/10 border-t-2 border-t-[#ec168c]/55 p-8 hover:border-[#ec168c]/40 transition-all hover:bg-[#191519] duration-300">
+            <div class="w-12 h-12 bg-[#ec168c]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.856-1.487M15 10a3 3 0 11-6 0 3 3 0 016 0zM15 20H9m6 0h.01"></path>
               </svg>
             </div>
-            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3">Supportive Community</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3 text-white">Supportive Community</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
               Train alongside serious athletes and fitness enthusiasts. A welcoming culture that pushes each other to be better every day.
             </p>
           </div>
 
           <!-- Feature 6 -->
-          <div class="border border-white/10 p-8 hover:border-white/30 transition-all hover:bg-white/5 duration-300">
-            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <div class="bg-[#151315] border border-white/10 border-t-2 border-t-[#ec168c]/45 p-8 hover:border-[#ec168c]/35 transition-all hover:bg-[#191519] duration-300">
+            <div class="w-12 h-12 bg-[#ec168c]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3">Personal Training</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="font-kenyan text-2xl md:text-3xl uppercase tracking-wider mb-3 text-white">Personal Training</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
               Available sessions with specialized coaches for personalized programming, form correction, and goal-specific training.
             </p>
           </div>
@@ -462,22 +467,22 @@
             <h2
               class="font-kenyan text-6xl md:text-7xl lg:text-8xl uppercase tracking-wider leading-[0.85] mb-8 text-white"
             >
-              OPEN<br /><span class="text-gray-400">WHEN YOU</span><br /><span class="text-gray-400">NEED US.</span>
+              OPEN<br />WHEN YOU<br />NEED US.
             </h2>
-            <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
+            <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-8">
               We're committed to accommodating your training schedule. Our facility operates throughout the week to ensure you can train whenever it fits your lifestyle—early morning grinders, late-night warriors, or weekend warriors, we're here for you.
             </p>
             
             <div class="space-y-2">
-              <p class="text-white font-sans text-sm font-bold uppercase tracking-wider mb-6">Standard Hours</p>
+              <p class="text-[#ff9bcb] font-sans text-sm font-bold uppercase tracking-wider mb-6">Standard Hours</p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div class="bg-white/5 border border-white/10 p-4">
+                <div class="border border-white/10 p-4">
                   <p class="text-gray-400 text-xs uppercase tracking-widest mb-1">Monday - Friday</p>
-                  <p class="text-white font-sans font-bold text-lg">5:00 AM - 11:00 PM</p>
+                  <p class="text-white font-sans font-bold text-lg"><span class="text-[#ff9bcb]">5:00 AM</span> - 11:00 PM</p>
                 </div>
-                <div class="bg-white/5 border border-white/10 p-4">
+                <div class="border border-white/10 p-4">
                   <p class="text-gray-400 text-xs uppercase tracking-widest mb-1">Saturday - Sunday</p>
-                  <p class="text-white font-sans font-bold text-lg">6:00 AM - 10:00 PM</p>
+                  <p class="text-white font-sans font-bold text-lg"><span class="text-[#ff9bcb]">6:00 AM</span> - 10:00 PM</p>
                 </div>
               </div>
             </div>
@@ -485,44 +490,44 @@
 
           <!-- Right: Visual/Stats -->
           <div class="space-y-8">
-            <div class="border border-white/10 p-8 hover:border-white/30 transition-all duration-300">
+            <div class="border border-white/10 p-8 hover:border-[#ec168c]/35 transition-all duration-300">
               <div class="flex items-start gap-4">
-                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <div class="w-12 h-12 border border-[#ec168c]/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-kenyan text-2xl uppercase tracking-wider mb-2">18+ Hours Daily</h3>
-                  <p class="text-gray-400 text-sm">Extensive training windows to fit your lifestyle, morning or night.</p>
+                  <h3 class="font-kenyan text-2xl uppercase tracking-wider mb-2 text-white">18+ Hours Daily</h3>
+                  <p class="text-gray-300 text-sm">Extensive training windows to fit your lifestyle, morning or night.</p>
                 </div>
               </div>
             </div>
 
-            <div class="border border-white/10 p-8 hover:border-white/30 transition-all duration-300">
+            <div class="border border-white/10 p-8 hover:border-[#ec168c]/35 transition-all duration-300">
               <div class="flex items-start gap-4">
-                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <div class="w-12 h-12 border border-[#ec168c]/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-kenyan text-2xl uppercase tracking-wider mb-2">7 Days a Week</h3>
-                  <p class="text-gray-400 text-sm">No days off. We're open every single day for your consistency.</p>
+                  <h3 class="font-kenyan text-2xl uppercase tracking-wider mb-2 text-white">7 Days a Week</h3>
+                  <p class="text-gray-300 text-sm">No days off. We're open every single day for your consistency.</p>
                 </div>
               </div>
             </div>
 
-            <div class="border border-white/10 p-8 hover:border-white/30 transition-all duration-300">
+            <div class="border border-white/10 p-8 hover:border-[#ec168c]/35 transition-all duration-300">
               <div class="flex items-start gap-4">
-                <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <div class="w-12 h-12 border border-[#ec168c]/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#f08cbd]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-kenyan text-2xl uppercase tracking-wider mb-2">Flexible Pricing</h3>
-                  <p class="text-gray-400 text-sm">Walk in anytime or get a monthly/annual pass. Choose your commitment level.</p>
+                  <h3 class="font-kenyan text-2xl uppercase tracking-wider mb-2 text-white">Flexible Pricing</h3>
+                  <p class="text-gray-300 text-sm">Walk in anytime or get a monthly/annual pass. Choose your commitment level.</p>
                 </div>
               </div>
             </div>
